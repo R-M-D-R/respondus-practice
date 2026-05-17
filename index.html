@@ -229,6 +229,9 @@ h1, h2 {
 <!-- INTERACTIVE FINAL CHECK -->
 <div class="card info checklist">
 <h2>✅ Confirm Your Setup</h2>
+<p>
+Check each box below to confirm.
+</p>
 
 <form id="checklistForm">
 <ul>
@@ -300,6 +303,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const returnBtn = document.getElementById("returnBtn");
     const readyMessage = document.getElementById("readyMessage");
 
+	// Reset checklist and commitment on page load
+	document.getElementById("checklistForm").reset();
+	commitCheck.checked = false;
+	
     // Get and safely decode return URL
     const urlParams = new URLSearchParams(window.location.search);
     const rawReturn = urlParams.get("return");
