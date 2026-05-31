@@ -24,6 +24,10 @@ h1, h2 {
     margin-top: 0;
 }
 
+p, ul, input, li, label {
+	font-size: 14pt;
+}
+	
 /* Cards */
 .card {
     background: white;
@@ -267,7 +271,7 @@ Check each box below to confirm.
 <h2>🛑 Before You Continue</h2>
 
 <p>
-By continuing, you confirm that your setup meets all requirements.
+Check the box below to confirm that your setup meets all requirements.
 </p>
 
 <label>
@@ -283,6 +287,10 @@ I understand that failing to follow these rules may result in my test being flag
 <div class="card good" style="text-align:center;">
 <h2>🎯 Continue to Certification</h2>
 
+<p style="margin-top:10px;">
+Complete ALL steps above and check ALL the boxes above to unlock the following button:
+</p>
+
 <button id="returnBtn" disabled style="
     background-color:#2d6cdf;
     color:white;
@@ -292,12 +300,9 @@ I understand that failing to follow these rules may result in my test being flag
     border-radius:6px;
     cursor:not-allowed;
 ">
-Return to Canvas
+Return to School's Website
 </button>
 
-<p style="margin-top:10px; font-size:14px;">
-Complete ALL steps above to unlock this button.
-</p>
 
 </div>
 
